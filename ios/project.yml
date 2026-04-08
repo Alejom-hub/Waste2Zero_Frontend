@@ -1,0 +1,34 @@
+name: Waste2ZeroiOS
+options:
+  minimumXcodeGenVersion: 2.38.0
+configs:
+  Debug: debug
+  Release: release
+settings:
+  base:
+    SWIFT_VERSION: 5.0
+    IPHONEOS_DEPLOYMENT_TARGET: 16.0
+packages: {}
+targets:
+  Waste2ZeroiOS:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: Waste2ZeroiOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.waste2zero.ios
+        PRODUCT_NAME: Waste2ZeroiOS
+        TARGETED_DEVICE_FAMILY: "1,2"
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: 1.0
+    info:
+      path: Waste2ZeroiOS/Info.plist
+      properties:
+        CFBundleDisplayName: Waste2Zero
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+    scheme:
+      testTargets: []
